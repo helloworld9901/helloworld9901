@@ -1,0 +1,98 @@
+:root {
+    --color-bg: #ffffff;
+    --color-text-main: #1a1a1a;
+    --color-primary: #ffcc00;
+  }
+  
+  * {
+    box-sizing: border-box;
+   font-family: 'Bitter', serif;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  
+  h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+  
+  /* Subheading */
+  h2 {
+    color: Brown;
+  }
+  
+  /* Paragraph */
+  p {
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+  
+  p.box {
+    padding: 20px;
+    margin: 0em;
+    /*background-color: var(--color-primary);*/
+    background-image: url('https://images.unsplash.com/photo-1602108987428-4768d7c7ecbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8eWVsbG93JTIwdGV4dHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    color: white;
+  }
+  
+  /* List Items */
+  li {
+    line-height: 1.4em;
+    margin-bottom: 0.2em;
+  }
+  
+  /* Flexbox */
+  
+  .flexible-container {
+      display: flex;
+    width: 100%;
+    height: 100%;
+      flex-wrap: no-wrap;
+      background-color: var(--color-primary);
+    padding: 10px;
+  }
+  
+  .flex-column {
+    margin: 10px;
+    /* !!!DEAR MAX!!! IS THERE A WAY TO GET ALL THE IMAGES TO 
+  ALWAYS FIT IN THIS FLEXBOX WITHOUT PUTTING THEM IN DIVs?*/
+  }
+  
+  .flex-column img {
+    width: 100%;
+  }
+  
+  /* show text on image hover */
+  .img-wrap {
+    position: relative;
+  }
+  
+  .img-description {
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0, 0, 0, 0.72);
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+  }
+  
+  .img-wrap:hover .img-description {
+    visibility: visible;
+    opacity: 1;
+  }
